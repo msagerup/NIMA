@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import ContactForm from '../Components/ContactForm'
-// import {AppContextData} from '../../Context/ContextData'
+import {AppContextData} from '../Context/ContextData'
 import { Link } from 'react-router-dom';
 
 import {
@@ -11,21 +11,21 @@ import {
 } from 'semantic-ui-react'
 
 const Nav = (props) => {
-   // const {menuOpen} = useContext(AppContextData)
+   const {menuOpen} = useContext(AppContextData)
 
    return (
-      <section style={{ paddingTop: '15px', height: '100vh' }}>
+      <div style={{ paddingTop: '15px'}}>
+         <section>
          <Sidebar.Pushable as={Segment}>
             <Sidebar
                as={Menu}
-               animation='slide along'
+               animation='scale down'
                icon='labeled'
                inverted
                // onHide={() => setVisible(false)}
                vertical
-               // visible={menuOpen}
-               visible={true}
-               width='thin'
+               visible={menuOpen}
+               width='wide'
                direction='right'
             >
                <Menu.Item>
@@ -58,7 +58,8 @@ const Nav = (props) => {
                {props.children}
             </Sidebar.Pusher>
          </Sidebar.Pushable>
-      </section>
+         </section>
+      </div>
    )
 }
 

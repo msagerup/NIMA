@@ -4,27 +4,31 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-// import { Container } from 'semantic-ui-react'
+import { ContextDataProvider } from './Context/ContextData';
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Nav from './Components/Nav'
 import TopBar from './Components/TopBar'
+import Footer from './Components/Footer'
 
 function App() {
   return (
-    <Router>
-      <TopBar />
-      <Nav>
+    <ContextDataProvider>
+      <Router>
+        <TopBar />
         <Switch>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/">
-            <Home />
+            <Nav>
+              <Home />
+            </Nav>
           </Route>
         </Switch>
-        </Nav>
-    </Router>
+        <Footer />
+      </Router>
+    </ContextDataProvider>
   );
 }
 
