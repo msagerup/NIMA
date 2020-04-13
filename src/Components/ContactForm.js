@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 import { Drawer, Form, Button, Col, Row, Input, Select, DatePicker } from 'antd';
@@ -25,8 +24,8 @@ const DrawerForm = () => {
 
     <>
 
-      <Button type="primary" onClick={showDrawer}>
-        <PlusOutlined /> New account
+      <Button onClick={showDrawer}>
+        Contact Us
         </Button>
       <Drawer
         title="Send us a message"
@@ -37,7 +36,7 @@ const DrawerForm = () => {
         footer={
           <div
             style={{
-              textAlign: 'right',
+              textAlign: 'left',
             }}
           >
             <Button
@@ -52,7 +51,7 @@ const DrawerForm = () => {
           </div>
         }
       >
-        <h2>FORM GOES HERE </h2>
+        <h2>Contact FORM placeholder</h2>
       </Drawer>
     </>
 

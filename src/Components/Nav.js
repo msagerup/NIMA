@@ -14,7 +14,7 @@ const Nav = (props) => {
    const {menuOpen} = useContext(AppContextData)
 
    return (
-      <div style={{ paddingTop: '15px'}}>
+      <div>
          <section>
          <Sidebar.Pushable as={Segment}>
             <Sidebar
