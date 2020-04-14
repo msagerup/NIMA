@@ -10,33 +10,35 @@ import Images from './ImageGallery'
 export default function ProjectRev() {
    return (
       <Container>
-         <Row className='devider'>
+         <section>
+               <Row className='devider'>
+                  <Col lg={12} xs={24} sm={24} ><Typography variant='h4'>New Listing</Typography></Col>
+               </Row>
+               
+         </section>
+         <Row>
          </Row>
          <Row justify="space-around" align="top">
-            <Col span={10}>
+            <Col lg={{ span: 10, order: 1 }} xs={{ span: 24, order: 2 }}>
                <Images />
             </Col>
-            <Col span={12} offset={2}>
+            <Col lg={{ span: 12, order: 2, offset: 2 }} xs={{ span: 24, order: 1 }} >
                <Typography
-                  variant="h4"
+                  variant="h5"
                   className='devider'
                >
                   Dorado Beach, Puerto Rico
-                    </Typography>
+               </Typography>
                <Typography variant='body2'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit ratione consequatur at voluptate dolore id corporis repudiandae velit minima qui perferendis tempore amet quis vitae maxime, libero ad aliquam, reiciendis illo eius possimus distinctio. Iusto natus maiores laborum vel nobis accusantium dolor odit, totam soluta consequatur ex beatae quas quaerat libero placeat ducimus laudantium omnis hic recusandae nemo ut?``
-                     </Typography>
-               <Row className='devider'>
-                  <Col span={12}>
-                     <ListingDetails />
-                  </Col>
-                  <Col span={12}>
-                     <Button type="dashed">Contact us about property</Button>
-                  </Col>
-               </Row>
+               </Typography>
+               <div className="deviderHalf"></div>
+            </Col>
+            <Col lg={{span: 14, order: 3, push:9}} xs={{span: 24, order: 3}}>
+               <ListingDetails />
             </Col>
          </Row>
-         
+         <Row className='devider'></Row>
       </Container>
    )
 }
