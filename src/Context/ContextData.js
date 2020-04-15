@@ -6,6 +6,9 @@ const AppContextData = React.createContext();
  class ContextDataProvider extends Component {
     state = {
         menuOpen: false,
+        contactDrawerOpen: false,
+        contactPerson: '',
+        listingDrawerOpen: false,
     }
     render() {
         return (
@@ -15,7 +18,19 @@ const AppContextData = React.createContext();
                     this.setState({
                         menuOpen: !this.state.menuOpen
                     })
+                },
+                toggleContactDrawer: (bool, person) => {
+                    this.setState({
+                        contactDrawerOpen: bool,
+                        contactPerson: person
+                    })
+                },
+                toggleListingDrawer: (bool) => {
+                    this.setState({
+                        listingDrawerOpen: bool
+                    })
                 }
+
             }}>
                 {this.props.children}
             </AppContextData.Provider>

@@ -1,17 +1,15 @@
-import React from 'react'
-import { Avatar } from 'antd';
-import { Button } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import React, {useContext} from 'react'
 import { Row, Col } from 'antd';
 import { Typography } from '@material-ui/core';
 import { Container } from 'semantic-ui-react'
-import ImportContactsOutlinedIcon from '@material-ui/icons/ImportContactsOutlined';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
-import GTranslateIcon from '@material-ui/icons/GTranslate';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import blueprint from '../../images/blueprint.jpg'
 
+import { AppContextData } from '../../Context/ContextData'
+
+
 export default function About() {
+   const { toggleContactDrawer } = useContext(AppContextData)
    return (
       <Container>
          <Row className='devider'>
@@ -29,27 +27,34 @@ export default function About() {
                </Row>
             </Col>
             <Col lg={{span:12, offset: 2}} xs={{span:24}}>
-               <img src={blueprint} className='imageHolder' alt="Blue print image" />
+               <img src={blueprint} className='imageHolder' alt="Blue print " />
             </Col>
          </Row>
          <Row className='deviderHalf'></Row>
          <section className="sectionPaddingSplit">
             
                <Row gutter={[10, 10]}>
-                  <Col lg={8} xs={12} sm={12} >
-                     <div className='threeRows' style={{fontSize:'50px', textAlign: 'center'}}>
-                         <ArrowForwardIosIcon fontSize='inherit'/>
-                        <Typography variant="h5">Principals</Typography>
+                  <Col lg={8} xs={24} sm={12} >
+                     <div className='threeRowsMobile' style={{fontSize:'70px', textAlign: 'center'}}>
+                        <Typography variant="h5">Contact Principals</Typography>
                      </div>
                   </Col>
                   <Col lg={8} xs={12} sm={12} >
-                  <div className='threeRows' style={{fontSize:'50px', textAlign: 'center'}}>
+                  <div
+                   className='threeRows'
+                  style={{fontSize:'50px', textAlign: 'center', cursor: 'pointer'}}
+                  onClick={() => toggleContactDrawer(true, 'Camilla')}
+                  >
                         <ContactMailIcon fontSize='inherit'/>
                         <Typography variant="h5">Camilla Sagerup</Typography>
                      </div>
                   </Col>
-                  <Col lg={8} xs={24} sm={12} >
-                  <div className='threeRows' style={{fontSize:'50px', textAlign: 'center'}}>
+                  <Col lg={8} xs={12} sm={12} >
+                  <div
+                   className='threeRows'
+                  style={{fontSize:'50px', textAlign: 'center', cursor: 'pointer'}}
+                  onClick={() => toggleContactDrawer(true, 'Joshua')}
+                  >
                   <ContactMailIcon fontSize='inherit'/>
                         <Typography variant="h5">Joshua Levy</Typography>
                      </div>
@@ -57,7 +62,7 @@ export default function About() {
                </Row>
             
          </section>
-         <Row className='devider'></Row>
+         
       </Container>
    )
 }

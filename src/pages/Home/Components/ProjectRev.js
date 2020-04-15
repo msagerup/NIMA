@@ -1,20 +1,22 @@
-import React from 'react'
-import { Button } from 'antd';
-import { Row, Col } from 'antd';
+import React, { useContext } from 'react'
+import { Row, Col, Button } from 'antd';
 import { Typography } from '@material-ui/core';
 import { Container } from 'semantic-ui-react'
 import ListingDetails from '../../../Components/ListingDetails'
 import Images from './ImageGallery'
 
+import { AppContextData } from '../../../Context/ContextData'
+
 
 export default function ProjectRev() {
+   const {toggleListingDrawer} = useContext(AppContextData)
    return (
       <Container>
          <section>
-               <Row className='devider'>
-                  <Col lg={12} xs={24} sm={24} ><Typography variant='h4'>New Listing</Typography></Col>
-               </Row>
-               
+            <Row className='devider'>
+               <Col lg={12} xs={24} sm={24} ><Typography variant='h4'>Current Projects</Typography></Col>
+            </Row>
+
          </section>
          <Row>
          </Row>
@@ -30,15 +32,24 @@ export default function ProjectRev() {
                   Dorado Beach, Puerto Rico
                </Typography>
                <Typography variant='body2'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit ratione consequatur at voluptate dolore id corporis repudiandae velit minima qui perferendis tempore amet quis vitae maxime, libero ad aliquam, reiciendis illo eius possimus distinctio. Iusto natus maiores laborum vel nobis accusantium dolor odit, totam soluta consequatur ex beatae quas quaerat libero placeat ducimus laudantium omnis hic recusandae nemo ut?``
+                  This property is located in exclusive <a href="https://www.doradobeach.com/" target="_blank"> Dorado Beach </a>, a Ritz Carlton Reserve in Puerto Rico.  It is an unique property that was built  from precast concrete forms.
+               </Typography>
+               <Typography variant='body2'>
+                  This estate has been completely gutted and re-imagined with major structural alternations and additions. The end product will result in a spacious 7 bedroom Estate with high end, energy efficient materials and systems in a prime location, with a large private lot with ocean views.
                </Typography>
                <div className="deviderHalf"></div>
+               <div className="listDetailButton">
+                  <Button onClick={() => toggleListingDrawer(true)}>More Info</Button>
+               </div>
             </Col>
-            <Col lg={{span: 14, order: 3, push:9}} xs={{span: 24, order: 3}}>
+            <Col lg={{ span: 14, order: 3, push: 9 }} xs={{ span: 24, order: 3 }}>
                <ListingDetails />
             </Col>
          </Row>
          <Row className='devider'></Row>
+         <div className="listDetailButtonMobile">
+            <Button onClick={() => toggleListingDrawer(true)}>More Info</Button>
+         </div>
       </Container>
    )
 }

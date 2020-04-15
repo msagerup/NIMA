@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'semantic-ui-react'
-import { Typography } from '@material-ui/core';
+
 
 
 export default function Footer() {
