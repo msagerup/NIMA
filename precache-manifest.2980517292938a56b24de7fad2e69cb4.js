@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "546109e765aeda4662dc954e7f4e3edb",
+    "revision": "b6d3ac87c44ead7e78fb73d69177ae74",
     "url": "/NIMA/index.html"
   },
   {
-    "revision": "788b00bc55dd0dd31cb1",
+    "revision": "cf33f6616bebb507e679",
     "url": "/NIMA/static/css/2.acf7f8c3.chunk.css"
   },
   {
-    "revision": "9e2b25592c6ee684f5e9",
-    "url": "/NIMA/static/css/main.365998e6.chunk.css"
+    "revision": "c2244216be02f908cc7f",
+    "url": "/NIMA/static/css/main.afecdd31.chunk.css"
   },
   {
-    "revision": "788b00bc55dd0dd31cb1",
-    "url": "/NIMA/static/js/2.f3f6696d.chunk.js"
+    "revision": "cf33f6616bebb507e679",
+    "url": "/NIMA/static/js/2.e218b9e0.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/NIMA/static/js/2.f3f6696d.chunk.js.LICENSE.txt"
+    "url": "/NIMA/static/js/2.e218b9e0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e2b25592c6ee684f5e9",
-    "url": "/NIMA/static/js/main.ea34b036.chunk.js"
+    "revision": "c2244216be02f908cc7f",
+    "url": "/NIMA/static/js/main.da6ceffa.chunk.js"
   },
   {
     "revision": "e4f8d802a0436cc1a595",
