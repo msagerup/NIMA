@@ -91,6 +91,11 @@ footer {
 
 .listDetailButton {
   display: block;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #79cbf3;
+  width: 100px;
 }
 
 /* LISTING DRAWER */
@@ -359,6 +364,11 @@ form {
   }
   .listDetailButtonMobile {
     display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #79cbf3;
+    width: 100px;
   }
   .listDetailButton {
     display: none;

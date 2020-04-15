@@ -42,13 +42,13 @@ const ListingDetails = () => {
         footer={
           <div
             style={{
-              textAlign: 'right',
+              textAlign: 'center',
             }}
           >
 
-            <Button onClick={onClose} type="primary">
+            <div onClick={onClose} type="primary" style={{padding:'10px', cursor:'pointer', backgroundColor: '#3d3d3d', color:"white"}}>
               Close
-              </Button>
+              </div>
           </div>
         }
       >

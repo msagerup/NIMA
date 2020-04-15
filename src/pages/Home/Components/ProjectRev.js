@@ -39,7 +39,7 @@ export default function ProjectRev() {
                </Typography>
                <div className="deviderHalf"></div>
                <div className="listDetailButton">
-                  <Button onClick={() => toggleListingDrawer(true)}>More Info</Button>
+                  <div onClick={() => toggleListingDrawer(true)}>More Info</div>
                </div>
             </Col>
             <Col lg={{ span: 14, order: 3, push: 9 }} xs={{ span: 24, order: 3 }}>
@@ -48,7 +48,7 @@ export default function ProjectRev() {
          </Row>
          <Row className='devider'></Row>
          <div className="listDetailButtonMobile">
-            <Button onClick={() => toggleListingDrawer(true)}>More Info</Button>
+            <div onClick={() => toggleListingDrawer(true)}>More Info</div>
          </div>
       </Container>
    )
