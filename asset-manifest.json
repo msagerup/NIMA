@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/NIMA/static/css/main.afecdd31.chunk.css",
-    "main.js": "/NIMA/static/js/main.da6ceffa.chunk.js",
-    "main.js.map": "/NIMA/static/js/main.da6ceffa.chunk.js.map",
+    "main.css": "/NIMA/static/css/main.bb5d9465.chunk.css",
+    "main.js": "/NIMA/static/js/main.f52e42e0.chunk.js",
+    "main.js.map": "/NIMA/static/js/main.f52e42e0.chunk.js.map",
     "runtime-main.js": "/NIMA/static/js/runtime-main.b6f23ac4.js",
     "runtime-main.js.map": "/NIMA/static/js/runtime-main.b6f23ac4.js.map",
-    "static/css/2.acf7f8c3.chunk.css": "/NIMA/static/css/2.acf7f8c3.chunk.css",
-    "static/js/2.e218b9e0.chunk.js": "/NIMA/static/js/2.e218b9e0.chunk.js",
-    "static/js/2.e218b9e0.chunk.js.map": "/NIMA/static/js/2.e218b9e0.chunk.js.map",
+    "static/css/2.c68737a4.chunk.css": "/NIMA/static/css/2.c68737a4.chunk.css",
+    "static/js/2.9ab39966.chunk.js": "/NIMA/static/js/2.9ab39966.chunk.js",
+    "static/js/2.9ab39966.chunk.js.map": "/NIMA/static/js/2.9ab39966.chunk.js.map",
     "index.html": "/NIMA/index.html",
-    "precache-manifest.2980517292938a56b24de7fad2e69cb4.js": "/NIMA/precache-manifest.2980517292938a56b24de7fad2e69cb4.js",
+    "precache-manifest.e6d87c55d50cdb3af48d2bd24fa6d8b2.js": "/NIMA/precache-manifest.e6d87c55d50cdb3af48d2bd24fa6d8b2.js",
     "service-worker.js": "/NIMA/service-worker.js",
-    "static/css/2.acf7f8c3.chunk.css.map": "/NIMA/static/css/2.acf7f8c3.chunk.css.map",
-    "static/css/main.afecdd31.chunk.css.map": "/NIMA/static/css/main.afecdd31.chunk.css.map",
-    "static/js/2.e218b9e0.chunk.js.LICENSE.txt": "/NIMA/static/js/2.e218b9e0.chunk.js.LICENSE.txt",
-    "static/media/blueprint.jpg": "/NIMA/static/media/blueprint.c05f86a2.jpg",
-    "static/media/index.css": "/NIMA/static/media/cover1.a8870be8.jpg",
+    "static/css/2.c68737a4.chunk.css.map": "/NIMA/static/css/2.c68737a4.chunk.css.map",
+    "static/css/main.bb5d9465.chunk.css.map": "/NIMA/static/css/main.bb5d9465.chunk.css.map",
+    "static/js/2.9ab39966.chunk.js.LICENSE.txt": "/NIMA/static/js/2.9ab39966.chunk.js.LICENSE.txt",
+    "static/media/blueprint.jpg": "/NIMA/static/media/blueprint.be088c4d.jpg",
+    "static/media/index.css": "/NIMA/static/media/cover1.9e78cbcd.jpg",
     "static/media/hus1.jpg": "/NIMA/static/media/hus1.61db4097.jpg",
     "static/media/hus1_tumb.jpg": "/NIMA/static/media/hus1_tumb.07635fc3.jpg",
     "static/media/hus2.jpg": "/NIMA/static/media/hus2.21b16508.jpg",
@@ -26,14 +26,14 @@
     "static/media/hus4_tumb.jpg": "/NIMA/static/media/hus4_tumb.e383fd89.jpg",
     "static/media/hus5.jpg": "/NIMA/static/media/hus5.9d27fb7f.jpg",
     "static/media/hus5_tumb.jpg": "/NIMA/static/media/hus5_tumb.d341a714.jpg",
-    "static/media/logo_svg.svg": "/NIMA/static/media/logo_svg.de4c40b9.svg",
+    "static/media/logo_svg.svg": "/NIMA/static/media/logo_svg.6e7a030a.svg",
     "static/media/placeholder.jpg": "/NIMA/static/media/placeholder.1331d2e7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b6f23ac4.js",
-    "static/css/2.acf7f8c3.chunk.css",
-    "static/js/2.e218b9e0.chunk.js",
-    "static/css/main.afecdd31.chunk.css",
-    "static/js/main.da6ceffa.chunk.js"
+    "static/css/2.c68737a4.chunk.css",
+    "static/js/2.9ab39966.chunk.js",
+    "static/css/main.bb5d9465.chunk.css",
+    "static/js/main.f52e42e0.chunk.js"
   ]
 }

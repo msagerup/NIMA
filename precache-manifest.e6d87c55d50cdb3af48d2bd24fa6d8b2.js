@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6d3ac87c44ead7e78fb73d69177ae74",
+    "revision": "a0c428f1046b7a08fd56784887e8e2b4",
     "url": "/NIMA/index.html"
   },
   {
-    "revision": "cf33f6616bebb507e679",
-    "url": "/NIMA/static/css/2.acf7f8c3.chunk.css"
+    "revision": "70b5dc25126b76446f23",
+    "url": "/NIMA/static/css/2.c68737a4.chunk.css"
   },
   {
-    "revision": "c2244216be02f908cc7f",
-    "url": "/NIMA/static/css/main.afecdd31.chunk.css"
+    "revision": "5788832e3b55fb1f45de",
+    "url": "/NIMA/static/css/main.bb5d9465.chunk.css"
   },
   {
-    "revision": "cf33f6616bebb507e679",
-    "url": "/NIMA/static/js/2.e218b9e0.chunk.js"
+    "revision": "70b5dc25126b76446f23",
+    "url": "/NIMA/static/js/2.9ab39966.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/NIMA/static/js/2.e218b9e0.chunk.js.LICENSE.txt"
+    "url": "/NIMA/static/js/2.9ab39966.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2244216be02f908cc7f",
-    "url": "/NIMA/static/js/main.da6ceffa.chunk.js"
+    "revision": "5788832e3b55fb1f45de",
+    "url": "/NIMA/static/js/main.f52e42e0.chunk.js"
   },
   {
     "revision": "e4f8d802a0436cc1a595",
     "url": "/NIMA/static/js/runtime-main.b6f23ac4.js"
   },
   {
-    "revision": "c05f86a2dc9024db20b9e2cf1290673b",
-    "url": "/NIMA/static/media/blueprint.c05f86a2.jpg"
+    "revision": "be088c4d0b738111389a038fc3f2863a",
+    "url": "/NIMA/static/media/blueprint.be088c4d.jpg"
   },
   {
-    "revision": "a8870be8da568a4adcda0f3ce48f4b59",
-    "url": "/NIMA/static/media/cover1.a8870be8.jpg"
+    "revision": "9e78cbcd8c7d582ef92549f79979cbe8",
+    "url": "/NIMA/static/media/cover1.9e78cbcd.jpg"
   },
   {
     "revision": "61db4097166d2b19ad9ff52a7363870d",
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NIMA/static/media/hus5_tumb.d341a714.jpg"
   },
   {
-    "revision": "de4c40b9dce612d617c51ce0a4389026",
-    "url": "/NIMA/static/media/logo_svg.de4c40b9.svg"
+    "revision": "6e7a030a588608cbdcb144d649b8252c",
+    "url": "/NIMA/static/media/logo_svg.6e7a030a.svg"
   },
   {
     "revision": "1331d2e70c339d45825c2fe4344ad360",
