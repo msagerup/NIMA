@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Row, Col, Button } from 'antd';
+import { Row, Col } from 'antd';
 import { Typography } from '@material-ui/core';
 import { Container } from 'semantic-ui-react'
 import ListingDetails from '../../../Components/ListingDetails'
@@ -31,10 +31,10 @@ export default function ProjectRev() {
                >
                   Dorado Beach, Puerto Rico
                </Typography>
-               <Typography variant='body2'>
-                  This property is located in exclusive <a href="https://www.doradobeach.com/" target="_blank"> Dorado Beach </a>, a Ritz Carlton Reserve in Puerto Rico.  It is an unique property that was built  from precast concrete forms.
+               <Typography variant='body1'>
+                  This property is located in exclusive <a href="https://www.ritzcarlton.com/en/hotels/puerto-rico/dorado-beach/hotel-overview?fbclid=IwAR3it7c-AythbuknU1G6PsKZ3q9PKPXMD2cbB7_Oc8a3MRUpOagcw9MOWoo" target="_blank" rel="noopener noreferrer"> Dorado Beach </a>, a Ritz Carlton Reserve in Puerto Rico.  It is an unique property that was built  from precast concrete forms.
                </Typography>
-               <Typography variant='body2'>
+               <Typography variant='body1'>
                   This estate has been completely gutted and re-imagined with major structural alternations and additions. The end product will result in a spacious 7 bedroom Estate with high end, energy efficient materials and systems in a prime location, with a large private lot with ocean views.
                </Typography>
                <div className="deviderHalf"></div>

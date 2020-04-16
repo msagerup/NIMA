@@ -7,12 +7,15 @@ import { Typography } from '@material-ui/core';
 import { Container } from 'semantic-ui-react'
 import ImportContactsOutlinedIcon from '@material-ui/icons/ImportContactsOutlined';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
-import GTranslateIcon from '@material-ui/icons/GTranslate';
+import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import { AppContextData } from '../../Context/ContextData'
+import Logo from '../../images/logo_svg.svg'
 
+import grey from '@material-ui/core/colors/red';
 
 export default function Home() {
    const { toggleContactDrawer } = useContext(AppContextData)
+   const primary = grey[500]; // #F44336
 
    return (
       <>
@@ -21,13 +24,15 @@ export default function Home() {
                <Row justify='center'>
                   <Col lg={{ span: 24 }} className='splashTextMargin'>
                      <div className="spashTextPad">
-                        <div className="headerText">NIMA Development</div>
+                        <div className="logoHolder" style={{ textAlign: 'center' }}>
+                           <img src={Logo} alt="Nima Logo" className="logo" />
+                        </div>
                      </div>
                      <div className="subTextPad">
                         <Typography variant="body1" className="subText ">
                            Nima Development is a real estate development  firm specializing in contemporary residential construction.
                         </Typography>
-                        <Typography variant="body2" className="subText deviderHalf">
+                        <Typography variant="body1" className="subText deviderHalf">
                            We design and build homes with a focus on energy efficient building envelopes, a healthy indoor environment, operational energy conservation with integration of solar PV systems where possible.
                          </Typography>
                      </div>
@@ -41,23 +46,34 @@ export default function Home() {
                   <Col lg={8} xs={12} sm={12} >
                      <div className='threeRows' style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer' }}>
                         <ImportContactsOutlinedIcon fontSize='inherit' />
-                        <Typography variant="h5">Listings</Typography>
+                        <div className="textColorWhite" style={{ color: 'white' }}>
+                           <Typography color='inherit' variant="h5">Listings</Typography>
+                        </div>
                      </div>
                   </Col>
                   <Col lg={8} xs={12} sm={12} >
+                     <div className='threeRows' style={{ fontSize: '50px', textAlign: 'center' }}>
+                        <HomeWorkIcon fontSize='inherit' />
+                        <div className="textColorWhite" style={{ color: 'white' }}>
+                           <Typography color='inherit' variant="h5">Projects</Typography>
+                        </div>
+                     </div>
+                  </Col>
+                  <Col lg={8} xs={24} sm={12} >
                      <div className='threeRows'
                         style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer' }}
                         onClick={() => toggleContactDrawer(true, 'NIMA')}
                      >
                         <ContactMailIcon fontSize='inherit' />
-                        <Typography variant="h5">Contact</Typography>
+                        <div className="textColorWhite" style={{ color: 'white' }}>
+                           <Typography color='inherit' variant="h5">Contact</Typography>
+                        </div>
                      </div>
-                  </Col>
-                  <Col lg={8} xs={24} sm={12} >
-                     <div className='threeRows' style={{ fontSize: '50px', textAlign: 'center' }}>
-                        <GTranslateIcon fontSize='inherit' />
-                        <Typography variant="h5">Change Language</Typography>
-                     </div>
+
+
+
+
+
                   </Col>
                </Row>
             </Container>

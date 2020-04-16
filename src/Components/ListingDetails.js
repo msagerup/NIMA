@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Drawer, Button, Col, Row, List } from 'antd';
+import { Drawer, Col, Row, List } from 'antd';
 import { Typography } from '@material-ui/core';
 
 import placeholder from '../images/placeholder.jpg'
@@ -46,7 +46,7 @@ const ListingDetails = () => {
             }}
           >
 
-            <div onClick={onClose} type="primary" style={{padding:'10px', cursor:'pointer', backgroundColor: '#3d3d3d', color:"white"}}>
+            <div onClick={onClose} type="primary" style={{padding:'10px', cursor:'pointer', backgroundColor: '#201e1f', color:"white"}}>
               Close
               </div>
           </div>
@@ -64,7 +64,7 @@ const ListingDetails = () => {
           </Col>
           <Col lg={{ span: 20 }} xs={{ span: 24 }}>
             <Typography variant='body2'>
-              This property is located in exclusive <a href="https://www.doradobeach.com/" target="_blank"> Dorado Beach </a>, a Ritz Carlton Reserve in Puerto Rico.  It is an unique property that was built  from precast concrete forms.
+              This property is located in exclusive <a href="https://www.doradobeach.com/" target="_blank" rel="noopener noreferrer"> Dorado Beach </a>, a Ritz Carlton Reserve in Puerto Rico.  It is an unique property that was built  from precast concrete forms.
                </Typography>
             <Typography variant='body2'>
               This estate has been completely gutted and re-imagined with major structural alternations and additions. The end product will result in a spacious 7 bedroom Estate with high end, energy efficient materials and systems in a prime location, with a large private lot with ocean views.

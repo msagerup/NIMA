@@ -10,7 +10,15 @@
 }
 
 .logo {
-  width: 150px;
+  width: 400px;
+}
+
+.lightGreyBackground {
+  background-color: #bbbbbb !important;
+}
+
+.lightGreyContact {
+  background-color: #585858 !important;
 }
 
 .splashTextMargin {
@@ -19,21 +27,26 @@
 
 .sectionPaddingSplit {
   padding: 50px 0;
-  background-color: #ffffff;
+  background-color: #585858;
 }
 
 .sectionPaddingOne {
   padding: 50px 0;
-  background-color: #e4e3e3;
+  background-color: #d8d8d8;
 }
 
 .sectionPaddingTwo {
   padding: 50px 0;
+  background-color: #bbbbbb;
 }
 
 .threeRows {
-  background-color: #79cbf3;
+  background-color: #201e1f;
   padding: 30px;
+  color: #d6ccb3;
+}
+.textColorWhite {
+  color: white;
 }
 
 .headerText {
@@ -49,7 +62,7 @@
 
 .spashTextPad {
   padding: 30px;
-  background-color: #79cbf3;
+  background-color: #201e1f;
 }
 
 .subTextPad {
@@ -94,7 +107,8 @@ footer {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #79cbf3;
+  background-color: #201e1f;
+  color: #e7e7e7;
   width: 100px;
 }
 
@@ -335,6 +349,9 @@ form {
 /* Media Breakpoints */
 
 @media only screen and (max-width: 600px) {
+  .logo {
+    width: 200px;
+  }
   .headerText {
     font-size: 3.5rem;
     font-weight: 100;
@@ -350,7 +367,7 @@ form {
     /* position: absolute; */
   }
   .splashTextMargin {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .devider {
     padding: 20px 0;
@@ -362,12 +379,18 @@ form {
     background-color: #e4e3e3;
     padding: 15px;
   }
+
+  .threeRowsContactMobile {
+    height: 200px;
+  }
+
   .listDetailButtonMobile {
     display: block;
     padding: 10px;
     cursor: pointer;
     text-align: center;
-    background-color: #79cbf3;
+    background-color: #201e1f;
+    color: white;
     width: 100px;
   }
   .listDetailButton {
