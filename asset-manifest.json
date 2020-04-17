@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/NIMA/static/css/main.e2c1785e.chunk.css",
+    "main.css": "/NIMA/static/css/main.32ec2430.chunk.css",
     "main.js": "/NIMA/static/js/main.bea71438.chunk.js",
     "main.js.map": "/NIMA/static/js/main.bea71438.chunk.js.map",
     "runtime-main.js": "/NIMA/static/js/runtime-main.b6f23ac4.js",
@@ -9,10 +9,10 @@
     "static/js/2.5ad13d66.chunk.js": "/NIMA/static/js/2.5ad13d66.chunk.js",
     "static/js/2.5ad13d66.chunk.js.map": "/NIMA/static/js/2.5ad13d66.chunk.js.map",
     "index.html": "/NIMA/index.html",
-    "precache-manifest.599291e8f14bbb9462ad379e79d03ab6.js": "/NIMA/precache-manifest.599291e8f14bbb9462ad379e79d03ab6.js",
+    "precache-manifest.8dada0ab13a88ca8b653ffd906486c38.js": "/NIMA/precache-manifest.8dada0ab13a88ca8b653ffd906486c38.js",
     "service-worker.js": "/NIMA/service-worker.js",
     "static/css/2.acf7f8c3.chunk.css.map": "/NIMA/static/css/2.acf7f8c3.chunk.css.map",
-    "static/css/main.e2c1785e.chunk.css.map": "/NIMA/static/css/main.e2c1785e.chunk.css.map",
+    "static/css/main.32ec2430.chunk.css.map": "/NIMA/static/css/main.32ec2430.chunk.css.map",
     "static/js/2.5ad13d66.chunk.js.LICENSE.txt": "/NIMA/static/js/2.5ad13d66.chunk.js.LICENSE.txt",
     "static/media/blueprint.jpg": "/NIMA/static/media/blueprint.be088c4d.jpg",
     "static/media/index.css": "/NIMA/static/media/cover1.9e78cbcd.jpg",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.b6f23ac4.js",
     "static/css/2.acf7f8c3.chunk.css",
     "static/js/2.5ad13d66.chunk.js",
-    "static/css/main.e2c1785e.chunk.css",
+    "static/css/main.32ec2430.chunk.css",
     "static/js/main.bea71438.chunk.js"
   ]
 }
