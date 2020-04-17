@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/NIMA/static/css/main.bb5d9465.chunk.css",
-    "main.js": "/NIMA/static/js/main.f52e42e0.chunk.js",
-    "main.js.map": "/NIMA/static/js/main.f52e42e0.chunk.js.map",
+    "main.css": "/NIMA/static/css/main.e2c1785e.chunk.css",
+    "main.js": "/NIMA/static/js/main.bea71438.chunk.js",
+    "main.js.map": "/NIMA/static/js/main.bea71438.chunk.js.map",
     "runtime-main.js": "/NIMA/static/js/runtime-main.b6f23ac4.js",
     "runtime-main.js.map": "/NIMA/static/js/runtime-main.b6f23ac4.js.map",
-    "static/css/2.c68737a4.chunk.css": "/NIMA/static/css/2.c68737a4.chunk.css",
-    "static/js/2.9ab39966.chunk.js": "/NIMA/static/js/2.9ab39966.chunk.js",
-    "static/js/2.9ab39966.chunk.js.map": "/NIMA/static/js/2.9ab39966.chunk.js.map",
+    "static/css/2.acf7f8c3.chunk.css": "/NIMA/static/css/2.acf7f8c3.chunk.css",
+    "static/js/2.5ad13d66.chunk.js": "/NIMA/static/js/2.5ad13d66.chunk.js",
+    "static/js/2.5ad13d66.chunk.js.map": "/NIMA/static/js/2.5ad13d66.chunk.js.map",
     "index.html": "/NIMA/index.html",
-    "precache-manifest.e6d87c55d50cdb3af48d2bd24fa6d8b2.js": "/NIMA/precache-manifest.e6d87c55d50cdb3af48d2bd24fa6d8b2.js",
+    "precache-manifest.599291e8f14bbb9462ad379e79d03ab6.js": "/NIMA/precache-manifest.599291e8f14bbb9462ad379e79d03ab6.js",
     "service-worker.js": "/NIMA/service-worker.js",
-    "static/css/2.c68737a4.chunk.css.map": "/NIMA/static/css/2.c68737a4.chunk.css.map",
-    "static/css/main.bb5d9465.chunk.css.map": "/NIMA/static/css/main.bb5d9465.chunk.css.map",
-    "static/js/2.9ab39966.chunk.js.LICENSE.txt": "/NIMA/static/js/2.9ab39966.chunk.js.LICENSE.txt",
+    "static/css/2.acf7f8c3.chunk.css.map": "/NIMA/static/css/2.acf7f8c3.chunk.css.map",
+    "static/css/main.e2c1785e.chunk.css.map": "/NIMA/static/css/main.e2c1785e.chunk.css.map",
+    "static/js/2.5ad13d66.chunk.js.LICENSE.txt": "/NIMA/static/js/2.5ad13d66.chunk.js.LICENSE.txt",
     "static/media/blueprint.jpg": "/NIMA/static/media/blueprint.be088c4d.jpg",
     "static/media/index.css": "/NIMA/static/media/cover1.9e78cbcd.jpg",
     "static/media/hus1.jpg": "/NIMA/static/media/hus1.61db4097.jpg",
@@ -31,9 +31,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b6f23ac4.js",
-    "static/css/2.c68737a4.chunk.css",
-    "static/js/2.9ab39966.chunk.js",
-    "static/css/main.bb5d9465.chunk.css",
-    "static/js/main.f52e42e0.chunk.js"
+    "static/css/2.acf7f8c3.chunk.css",
+    "static/js/2.5ad13d66.chunk.js",
+    "static/css/main.e2c1785e.chunk.css",
+    "static/js/main.bea71438.chunk.js"
   ]
 }
