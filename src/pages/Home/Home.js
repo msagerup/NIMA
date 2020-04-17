@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect  } from 'react'
 // import Project from './Components/Project'
 import ProjectRev from './Components/ProjectRev'
 import About from '../About/About'
@@ -17,8 +17,24 @@ export default function Home() {
    const { toggleContactDrawer } = useContext(AppContextData)
    const primary = grey[500]; // #F44336
 
+   useEffect(() => {
+      setTimeout(() => {
+         someFetch()
+      }, 30000);
+    });
+   
+ 
+  
+    const someFetch = () => {
+      return (
+         <h1>HELLO</h1>
+      )
+         
+    }
+
    return (
       <>
+      {someFetch}
          <section className='splashImage'>
             <Container>
                <Row justify='center'>

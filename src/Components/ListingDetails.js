@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Drawer, Col, Row, List } from 'antd';
 import { Typography } from '@material-ui/core';
-
+import BathtubIcon from '@material-ui/icons/Bathtub';
+import KingBedIcon from '@material-ui/icons/KingBed';
 import placeholder from '../images/placeholder.jpg'
 import { AppContextData } from '../Context/ContextData'
 
@@ -46,29 +47,43 @@ const ListingDetails = () => {
             }}
           >
 
-            <div onClick={onClose} type="primary" style={{padding:'10px', cursor:'pointer', backgroundColor: '#201e1f', color:"white"}}>
+            <div onClick={onClose} type="primary" style={{ padding: '10px', cursor: 'pointer', backgroundColor: '#201e1f', color: "white" }}>
               Close
               </div>
           </div>
         }
       >
-        <Row justify="center" gutter={[10, 10]}>
+        <Row justify="center" gutter={[10, 30]}>
           <Col lg={{ span: 20 }} xs={{ span: 24 }}>
-            <List
-              size="small"
-              header={<img src={placeholder} alt='placeholder' className="imageHolder" />}
-              // footer={<div>Footer</div>}
-              dataSource={data}
-              renderItem={item => <List.Item>{item}</List.Item>}
-            />
+            <img src={placeholder} alt='placeholder' className="imageHolder" />
+            <div className="houseItems">
+              <Typography>
+                <KingBedIcon />
+              7 Bedrooms
+              <BathtubIcon />
+              7 Full baths
+              4 Half Baths
+            </Typography>
+            </div>
           </Col>
           <Col lg={{ span: 20 }} xs={{ span: 24 }}>
-            <Typography variant='body2'>
-              This property is located in exclusive <a href="https://www.doradobeach.com/" target="_blank" rel="noopener noreferrer"> Dorado Beach </a>, a Ritz Carlton Reserve in Puerto Rico.  It is an unique property that was built  from precast concrete forms.
-               </Typography>
-            <Typography variant='body2'>
-              This estate has been completely gutted and re-imagined with major structural alternations and additions. The end product will result in a spacious 7 bedroom Estate with high end, energy efficient materials and systems in a prime location, with a large private lot with ocean views.
-               </Typography>
+            <Typography variant='h6'>
+              Featuring all amenities and requirements for a modern Caribbean lifestyle, this luxury villa is currently under construction with high quality materials and equipment.
+              <Typography variant='h6' className='deviderHalf'>
+                The property is set on an elevated plot of land with beautiful ocean views in the exclusive gated community of The Estates in Dorado Beach, Puerto Rico.
+              </Typography>
+            </Typography >
+            <Typography variant="body1" className='deviderHalf'>
+              The ground level comprises a living area with an integrated open-plan kitchen with direct access to the garden and pool area. The ground level also has a gym/playroom and a separate Guest Wing Suite with 3 En Suite bedrooms, walk in closets and a separate living room and kitchenette.
+            </Typography>
+            <Typography variant='body1'>
+              The main floor has a living area connected to the main kitchen with a large deck overlooking the private garden and beautiful ocean views. The main floor also has a separate bedroom suite with 4 bedrooms, 3 of which are En Suite with walk in closets.
+              This villa also has a 3rd floor mezzanine with a large private office with views of both the mountains to the south and ocean to the north.
+            </Typography>
+            <Typography variant="body1" className='deviderHalf'>
+              The home has extensive systems for built-in wiring for whole-home Wi-Fi.
+              The property includes a 3 car garage partially integrated into the ground with a live roof yoga pavilion.
+            </Typography>
           </Col>
         </Row>
       </Drawer>
