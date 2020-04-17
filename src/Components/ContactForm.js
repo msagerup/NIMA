@@ -26,10 +26,23 @@ const DrawerForm = () => {
 
     <>
       <Drawer
-        width={drawerWidth}
+        width={width}
         onClose={onClose}
         visible={contactDrawerOpen}
         bodyStyle={{ paddingBottom: 80, backgroundColor: '#3d3d3d' }}
+        footer={
+          <div
+            style={{
+              textAlign: 'center',
+              backgroundColor: '#201e1f !important'
+            }}
+          >
+
+            <div onClick={onClose} type="primary" style={{ padding: '10px', cursor: 'pointer', backgroundColor: '#201e1f', color: "white" }}>
+              Close
+              </div>
+          </div>
+        }
         
       >
 
