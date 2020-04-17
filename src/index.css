@@ -11,8 +11,8 @@ body {
   left: calc(50% - 4em);
   width: 6em;
   height: 6em;
-  border: 1.1em solid rgba(17, 17, 17, 0.945);
-  border-left: 1.1em solid #333333;
+  border: 1.1em solid #333333;
+  border-left: 1.1em solid rgba(17, 17, 17, 0.945);
   border-radius: 50%;
   /* background-color: red; */
   animation: load8 1.1s infinite linear;
