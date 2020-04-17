@@ -35,33 +35,37 @@ export default function About() {
 
             <Row gutter={[10, 10]}>
                <Col lg={8} xs={24} sm={12} >
-                  <div className='threeRowsMobile lightGreyContact' style={{ fontSize: '70px', textAlign: 'center' }}>
-                     <div className="textColorWhite ">
-                        <Typography color='inherit' variant="h5">Contact Principals</Typography>
+               <div
+                     className='pricipal threeRowsContactMobile'
+                     style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer', height: '100%', backgroundColor: '#464646' }}
+                     onClick={() => toggleContactDrawer(true, 'Camilla')}
+                  >
+                     <div className="textColorWhite">
+                        <Typography color='inherit' variant="h6">Contact Pricipals</Typography>
                      </div>
                   </div>
                </Col>
                <Col lg={8} xs={12} sm={12} >
                   <div
-                     className='threeRows threeRowsContactMobile lightGreyContact'
+                     className='threeRows threeRowsContactMobile'
                      style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer' }}
                      onClick={() => toggleContactDrawer(true, 'Camilla')}
                   >
                      <ContactMailIcon fontSize='inherit' />
                      <div className="textColorWhite">
-                        <Typography color='inherit' variant="h5">Camilla Sagerup</Typography>
+                        <Typography color='inherit' variant="h6">Camilla Sagerup</Typography>
                      </div>
                   </div>
                </Col>
                <Col lg={8} xs={12} sm={12} >
                   <div
-                     className='threeRows threeRowsContactMobile lightGreyContact'
+                     className='threeRows threeRowsContactMobile'
                      style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer' }}
                      onClick={() => toggleContactDrawer(true, 'Joshua')}
                   >
                      <ContactMailIcon fontSize='inherit' />
                      <div className="textColorWhite">
-                        <Typography color='inherit' variant="h5">Joshua Levy</Typography>
+                        <Typography color='inherit' variant="h6">Joshua Levy</Typography>
                      </div>
                   </div>
                </Col>
