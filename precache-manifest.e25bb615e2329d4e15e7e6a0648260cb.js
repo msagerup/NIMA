@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e63c0463866d977e278e2ddf7b6b5cf5",
+    "revision": "7ae65fbf406a99788ad3a926d706b2af",
     "url": "/NIMA/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NIMA/static/css/2.acf7f8c3.chunk.css"
   },
   {
-    "revision": "09b3a5762663f1712dc6",
+    "revision": "7cebcb6fdda70ef989de",
     "url": "/NIMA/static/css/main.32ec2430.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NIMA/static/js/2.5ad13d66.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "09b3a5762663f1712dc6",
-    "url": "/NIMA/static/js/main.bea71438.chunk.js"
+    "revision": "7cebcb6fdda70ef989de",
+    "url": "/NIMA/static/js/main.1b012a92.chunk.js"
   },
   {
     "revision": "e4f8d802a0436cc1a595",
