@@ -18,9 +18,9 @@ export default function TopBar() {
             </div>
          </Col>
          <Col lg= {{span: 1, offset: 17}} xs={{span:1, offset:15}} >
-            <IconButton color={primary} >
-               <MenuOpenIcon fontSize='large' onClick={() => toggleMenu()}  />
-            </IconButton>
+            
+               <div onClick={() => toggleMenu()}>MENU</div>
+            
          </Col>
       </Row>
    )

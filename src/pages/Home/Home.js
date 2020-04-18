@@ -1,4 +1,4 @@
-import React, { useContext  } from 'react'
+import React, {useState, useContext, useEffect } from 'react'
 // import Project from './Components/Project'
 import ProjectRev from './Components/ProjectRev'
 import About from '../About/About'
@@ -16,11 +16,19 @@ import Portfolio from '../../Components/Portfolio'
 
 
 export default function Home() {
-   const { toggleContactDrawer, toggleListings, togglePortfolio, listings, portfolio } = useContext(AppContextData)
+   const [scroller, displayScroller] = useState(true)
+   const { toggleContactDrawer, toggleListings, togglePortfolio, listings, portfolio, toggleMenu } = useContext(AppContextData)
 
-   const test = () => {
-      console.log('clicked')
-   }
+
+   // Hide scroll animation on scroll.
+   useEffect(() => {
+      window.onscroll = function() {
+         if(window.pageYOffset > 200) {
+            displayScroller(false)
+         }
+       };
+   }, [])
+
 
 
    return (
@@ -28,7 +36,7 @@ export default function Home() {
          <section className='splashImage'>
             <Container>
                <Row justify='center'>
-                  <Col lg={{ span: 24 }}  className='splashTextMargin'>
+                  <Col lg={{ span: 24 }} className='splashTextMargin'>
                      <div className="spashTextPad">
                         <div className="logoHolder" style={{ textAlign: 'center' }}>
                            <img src={Logo} alt="Nima Logo" className="logo" />
@@ -43,13 +51,29 @@ export default function Home() {
                          </Typography>
                      </div>
                   </Col>
+                  <Col>
+                     {scroller ? (
+                        <div className="mouse_scroll">
+                        <div className="mouse">
+                           <div className="wheel"></div>
+                        </div>
+                        <div>
+                           <span className="m_scroll_arrows one"></span>
+                           <span className="m_scroll_arrows two"></span>
+                           <span className="m_scroll_arrows three"></span>
+                        </div>
+                     </div>
+                     ) : ''}
+                     
+
+                  </Col>
                </Row>
             </Container>
          </section>
          <section className="sectionPaddingSplit">
             <Container>
                <Row gutter={[10, 10]}>
-                  <Col lg={{span: 8, order: 1}} xs={12}  >
+                  <Col lg={{ span: 8, order: 1 }} xs={12}  >
                      <div className='threeRows iconButtons' onClick={() => toggleListings(true)}>
                         <ImportContactsOutlinedIcon fontSize='inherit' />
                         <div className="textColorWhite" style={{ color: 'white' }}>
@@ -57,7 +81,7 @@ export default function Home() {
                         </div>
                      </div>
                   </Col>
-                  <Col lg={{span: 8, order: 2}} xs={12}  >
+                  <Col lg={{ span: 8, order: 2 }} xs={12}  >
                      <div className='threeRows iconButtons' onClick={() => togglePortfolio(true)}>
                         <HomeWorkIcon fontSize='inherit' />
                         <div className="textColorWhite" style={{ color: 'white' }}>
@@ -65,10 +89,10 @@ export default function Home() {
                         </div>
                      </div>
                   </Col>
-                  {listings ? <Col lg={{span: 24, order: 4}}><Listings /></Col> : ''}
-                  {portfolio ? <Col lg={{span: 24, order: 4}}><Portfolio /></Col> : ''}
+                  {listings ? <Col lg={{ span: 24, order: 4 }}><Listings /></Col> : ''}
+                  {portfolio ? <Col lg={{ span: 24, order: 4 }}><Portfolio /></Col> : ''}
 
-                  <Col lg={{span: 8, order: 3}} xs={24}  >
+                  <Col lg={{ span: 8, order: 3 }} xs={24}  >
                      <div className='threeRows iconButtons'
                         onClick={() => toggleContactDrawer(true, 'NIMA')}
                      >
