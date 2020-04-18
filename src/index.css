@@ -449,6 +449,11 @@ form {
     height: 70vh;
     /* position: absolute; */
   }
+
+  .imageHolder {
+    display: none;
+  }
+
   .splashTextMargin {
     margin-top: 50px;
   }

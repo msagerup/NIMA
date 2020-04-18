@@ -13,7 +13,7 @@ export default function About() {
    return (
       <Container>
          <Row className='devider'>
-            <Col lg={{ span: 24 }} sm={{span:18, offset: 2}} xs={{ span: 24 }}><Typography variant='h4'>About Us</Typography></Col>
+            <Col lg={{ span: 24 }} xs={{ span: 24 }}><Typography variant='h4'>About Us</Typography></Col>
          </Row>
          <Row justify="space-around" align="middle">
             <Col lg={{ span: 10 }} sm={{span:20}} xs={{ span: 24 }}>
@@ -26,7 +26,7 @@ export default function About() {
                </Typography>
                </Row>
             </Col>
-            <Col lg={{ span: 12, offset: 2 }} sm={{span:18}} xs={{ span: 24 }}>
+            <Col lg={{ span: 12, offset: 2 }}  xs={{ span: 24 }}>
                <img src={blueprint} className='imageHolder' alt="Blue print" />
             </Col>
          </Row>
@@ -45,7 +45,7 @@ export default function About() {
                      </div>
                   </div>
                </Col>
-               <Col lg={8} xs={24} sm={{span: 10, offset: 2}}  >
+               <Col lg={8} xs={24}  >
                   <div
                      className='threeRows iconButtons'
                      onClick={() => toggleContactDrawer(true, 'Camilla')}
@@ -56,7 +56,7 @@ export default function About() {
                      </div>
                   </div>
                </Col>
-               <Col lg={8} xs={24} sm={{span: 10}} >
+               <Col lg={8} xs={24}  >
                   <div
                      className='threeRows iconButtons'
                      onClick={() => toggleContactDrawer(true, 'Joshua')}

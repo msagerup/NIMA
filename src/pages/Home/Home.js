@@ -11,15 +11,24 @@ import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import { AppContextData } from '../../Context/ContextData'
 import Logo from '../../images/logo_svg.svg'
 
+import Listings from '../../Components/Listings'
+import Portfolio from '../../Components/Portfolio'
+
 
 export default function Home() {
-   const { toggleContactDrawer } = useContext(AppContextData)
+   const { toggleContactDrawer, toggleListings, togglePortfolio, listings, portfolio } = useContext(AppContextData)
+
+   const test = () => {
+      console.log('clicked')
+   }
+
+
    return (
       <>
          <section className='splashImage'>
             <Container>
                <Row justify='center'>
-                  <Col lg={{ span: 24 }} sm={{span: 20}} className='splashTextMargin'>
+                  <Col lg={{ span: 24 }}  className='splashTextMargin'>
                      <div className="spashTextPad">
                         <div className="logoHolder" style={{ textAlign: 'center' }}>
                            <img src={Logo} alt="Nima Logo" className="logo" />
@@ -40,23 +49,26 @@ export default function Home() {
          <section className="sectionPaddingSplit">
             <Container>
                <Row gutter={[10, 10]}>
-                  <Col lg={8} xs={12} sm={{span: 10, offset: 2}} >
-                     <div className='threeRows iconButtons'>
+                  <Col lg={{span: 8, order: 1}} xs={12}  >
+                     <div className='threeRows iconButtons' onClick={() => toggleListings(true)}>
                         <ImportContactsOutlinedIcon fontSize='inherit' />
                         <div className="textColorWhite" style={{ color: 'white' }}>
                            <Typography color='inherit' variant="h5">Listings</Typography>
                         </div>
                      </div>
                   </Col>
-                  <Col lg={8} xs={12} sm={10} >
-                     <div className='threeRows iconButtons'>
+                  <Col lg={{span: 8, order: 2}} xs={12}  >
+                     <div className='threeRows iconButtons' onClick={() => togglePortfolio(true)}>
                         <HomeWorkIcon fontSize='inherit' />
                         <div className="textColorWhite" style={{ color: 'white' }}>
-                           <Typography color='inherit' variant="h5">Projects</Typography>
+                           <Typography color='inherit' variant="h5">Portfolio</Typography>
                         </div>
                      </div>
                   </Col>
-                  <Col lg={8} xs={24} sm={{span: 20, offset: 2}} >
+                  {listings ? <Col lg={{span: 24, order: 4}}><Listings /></Col> : ''}
+                  {portfolio ? <Col lg={{span: 24, order: 4}}><Portfolio /></Col> : ''}
+
+                  <Col lg={{span: 8, order: 3}} xs={24}  >
                      <div className='threeRows iconButtons'
                         onClick={() => toggleContactDrawer(true, 'NIMA')}
                      >

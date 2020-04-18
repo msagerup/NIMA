@@ -9,6 +9,8 @@ const AppContextData = React.createContext();
         contactDrawerOpen: false,
         contactPerson: '',
         listingDrawerOpen: false,
+        listings: false,
+        portfolio: false
     }
     render() {
         return (
@@ -29,8 +31,19 @@ const AppContextData = React.createContext();
                     this.setState({
                         listingDrawerOpen: bool
                     })
+                },
+                toggleListings: (bool) =>{
+                    this.setState({
+                        listings: bool,
+                        portfolio: false
+                    })
+                },
+                togglePortfolio: (bool) =>{
+                    this.setState({
+                        portfolio: bool,
+                        listings: false
+                    })
                 }
-
             }}>
                 {this.props.children}
             </AppContextData.Provider>

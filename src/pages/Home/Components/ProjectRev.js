@@ -14,17 +14,17 @@ export default function ProjectRev() {
       <Container>
          <section>
             <Row className='devider'>
-               <Col lg={12} xs={24} sm={{span: 20, offset: 2}} ><Typography variant='h4'>Current Projects</Typography></Col>
+               <Col lg={12} xs={24}  ><Typography variant='h4'>Current Projects</Typography></Col>
             </Row>
 
          </section>
          <Row>
          </Row>
          <Row justify="space-around" align="top">
-            <Col lg={{ span: 10, order: 1 }} sm={{span: 24, order: 2}} xs={{ span: 24, order: 2 }}>
+            <Col lg={{ span: 10, order: 1 }}  xs={{ span: 24, order: 2 }}>
                <Images />
             </Col>
-            <Col lg={{ span: 12, order: 2, offset: 2 }} sm={{span: 20, order: 1}} xs={{ span: 24, order: 1 }} >
+            <Col lg={{ span: 12, order: 2, offset: 2 }}  xs={{ span: 24, order: 1 }} >
                <Typography
                   variant="h5"
                   className='devider'

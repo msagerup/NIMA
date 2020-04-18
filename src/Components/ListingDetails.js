@@ -28,7 +28,7 @@ const ListingDetails = () => {
     <>
       <Drawer
         title="Dorado Beach, Puerto Rico"
-        width={width}
+        width={drawerWidth}
         placement='left'
         onClose={onClose}
         visible={listingDrawerOpen}
