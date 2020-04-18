@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Drawer, Col, Row, List } from 'antd';
+import { Drawer, Col, Row } from 'antd';
 import { Typography } from '@material-ui/core';
 import BathtubIcon from '@material-ui/icons/Bathtub';
 import KingBedIcon from '@material-ui/icons/KingBed';
@@ -18,13 +18,6 @@ const ListingDetails = () => {
     drawerWidth = 720
   }
 
-  const data = [
-    '1005 Rooms',
-    '200000000 Dollaz',
-    '500 Bathrooms',
-    'Huge ass garden',
-    'Non-Leaky Roof',
-  ];
 
   const onClose = () => {
     toggleListingDrawer(false)
@@ -35,7 +28,7 @@ const ListingDetails = () => {
     <>
       <Drawer
         title="Dorado Beach, Puerto Rico"
-        width={drawerWidth}
+        width={width}
         placement='left'
         onClose={onClose}
         visible={listingDrawerOpen}

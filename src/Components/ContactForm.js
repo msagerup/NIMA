@@ -10,12 +10,12 @@ const DrawerForm = () => {
 
   // Calculate window width for drawer menu size.
   let width = window.innerWidth
-  let drawerWidth;
-  if (width <= 600) {
-    drawerWidth = 450
-  } else {
-    drawerWidth = 1500
-  }
+  // let drawerWidth;
+  // if (width <= 600) {
+  //   drawerWidth = 450
+  // } else {
+  //   drawerWidth = 1500
+  // }
 
 
   const onClose = () => {

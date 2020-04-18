@@ -74,6 +74,12 @@ body {
 
 /* Tree Rows Button */
 
+.iconButtons {
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
 .threeRows::before {
   content: "";
   position: absolute;
@@ -161,7 +167,7 @@ body {
 
 footer {
   padding: 30px;
-  background-color: #1b1c1d;
+  background-color: #201e1f;
   height: 80px;
 }
 
@@ -440,7 +446,7 @@ form {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 70vh;
     /* position: absolute; */
   }
   .splashTextMargin {
@@ -499,5 +505,43 @@ form {
   }
   input {
     font-size: 1.5rem !important;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .logo {
+    width: 250px;
+  }
+  .splashTextMargin {
+    margin-top: 20px;
+  }
+  .listDetailButton {
+    display: none;
+  }
+  .listDetailButtonMobile {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #201e1f;
+    color: white;
+    width: 100px;
+    margin-left: 80px;
+  }
+  .threeRows {
+    padding: 15px;
+  }
+  .imageHolder {
+    display: none;
+  }
+  .pricipal {
+    display: none;
+  }
+  .deviderHalf {
+    padding-bottom: 0px;
+  }
+  .landscapeDevider {
+    padding-bottom: 0px;
   }
 }

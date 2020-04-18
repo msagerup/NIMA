@@ -1,4 +1,4 @@
-import React, { useContext, useEffect  } from 'react'
+import React, { useContext  } from 'react'
 // import Project from './Components/Project'
 import ProjectRev from './Components/ProjectRev'
 import About from '../About/About'
@@ -11,34 +11,15 @@ import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import { AppContextData } from '../../Context/ContextData'
 import Logo from '../../images/logo_svg.svg'
 
-import grey from '@material-ui/core/colors/red';
 
 export default function Home() {
    const { toggleContactDrawer } = useContext(AppContextData)
-   const primary = grey[500]; // #F44336
-
-   useEffect(() => {
-      setTimeout(() => {
-         someFetch()
-      }, 30000);
-    });
-   
- 
-  
-    const someFetch = () => {
-      return (
-         <h1>HELLO</h1>
-      )
-         
-    }
-
    return (
       <>
-      {someFetch}
          <section className='splashImage'>
             <Container>
                <Row justify='center'>
-                  <Col lg={{ span: 24 }} className='splashTextMargin'>
+                  <Col lg={{ span: 24 }} sm={{span: 20}} className='splashTextMargin'>
                      <div className="spashTextPad">
                         <div className="logoHolder" style={{ textAlign: 'center' }}>
                            <img src={Logo} alt="Nima Logo" className="logo" />
@@ -59,25 +40,24 @@ export default function Home() {
          <section className="sectionPaddingSplit">
             <Container>
                <Row gutter={[10, 10]}>
-                  <Col lg={8} xs={12} sm={12} >
-                     <div className='threeRows' style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer' }}>
+                  <Col lg={8} xs={12} sm={{span: 10, offset: 2}} >
+                     <div className='threeRows iconButtons'>
                         <ImportContactsOutlinedIcon fontSize='inherit' />
                         <div className="textColorWhite" style={{ color: 'white' }}>
                            <Typography color='inherit' variant="h5">Listings</Typography>
                         </div>
                      </div>
                   </Col>
-                  <Col lg={8} xs={12} sm={12} >
-                     <div className='threeRows' style={{ fontSize: '50px', textAlign: 'center' }}>
+                  <Col lg={8} xs={12} sm={10} >
+                     <div className='threeRows iconButtons'>
                         <HomeWorkIcon fontSize='inherit' />
                         <div className="textColorWhite" style={{ color: 'white' }}>
                            <Typography color='inherit' variant="h5">Projects</Typography>
                         </div>
                      </div>
                   </Col>
-                  <Col lg={8} xs={24} sm={12} >
-                     <div className='threeRows'
-                        style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer' }}
+                  <Col lg={8} xs={24} sm={{span: 20, offset: 2}} >
+                     <div className='threeRows iconButtons'
                         onClick={() => toggleContactDrawer(true, 'NIMA')}
                      >
                         <ContactMailIcon fontSize='inherit' />
@@ -85,11 +65,6 @@ export default function Home() {
                            <Typography color='inherit' variant="h5">Contact</Typography>
                         </div>
                      </div>
-
-
-
-
-
                   </Col>
                </Row>
             </Container>
