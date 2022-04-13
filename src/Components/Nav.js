@@ -50,7 +50,7 @@ const Nav = (props) => {
                </Menu.Item>
                <Menu.Item >
                   <Icon name='camera' />
-                  Contact Usss
+                  Contact Us
                   <ContactForm />
                </Menu.Item>
             </Sidebar>

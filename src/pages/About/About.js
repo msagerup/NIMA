@@ -18,7 +18,7 @@ export default function About() {
          <Row justify="space-around" align="middle">
             <Col lg={{ span: 10 }} sm={{span:20}} xs={{ span: 24 }}>
                <Typography variant='body1'>
-                  The Nima Developent team consists of designers, builders and engineers with the skillset and common goal to build smart, energy efficient and healthy houses. We aim to integrate the latest in smart home and energy conservation technology into sustainable residential design.
+                  The Nima Development team consists of designers, builders and engineers with the skill-set and common goal to build smart, energy efficient and healthy houses. We aim to integrate the latest in smart home and energy conservation technology into sustainable residential design.
                   </Typography>
                <Row className='deviderHalf'>
                   <Typography variant='body1'>
@@ -37,11 +37,12 @@ export default function About() {
                <Col lg={8} xs={24} sm={0} >
                <div
                      className='pricipal threeRowsContactMobile'
-                     style={{ fontSize: '50px', textAlign: 'center', cursor: 'pointer', height: '100%', backgroundColor: '#464646' }}
-                     onClick={() => toggleContactDrawer(true, 'Camilla')}
+                     style={{ fontSize: '50px', textAlign: 'center', height: '100%', backgroundColor: '#464646' }}
                   >
-                     <div className="textColorWhite">
-                        <Typography color='inherit' variant="h6">Contact Pricipals</Typography>
+                     <div className="textColorWhite" style={{height: '100%', position: 'relative'}}>
+                        <div style={{margin: 'auto', position:'absolute', top: '50%', left: '30%', transform: 'translateY(-50%)'}}>
+                           <Typography color='inherit' variant="h6">Contact Principals:</Typography>
+                        </div>
                      </div>
                   </div>
                </Col>
